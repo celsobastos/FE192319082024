@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagens</title>
+  </head>
+  <body>
+    <!-- <img width="10%" src="img/hero.jpg" alt="Cachorro deitado na grama" /> -->
+
+    <picture>
+      <source srcset="img/hero.jpg" media="(min-width: 992px)" />
+      <source srcset="img/blog-2.jpg" media="(min-width: 600px)" />
+      <img src="img/hero.jpg" alt="Cachorro" width="50%" loading="lazy" />
+    </picture>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="test.php" method="post">
+      <div>
+        <label for="campo-nome">nome: </label>
+        <input
+          name="nome"
+          id="campo-nome"
+          type="text"
+          placeholder="Digite seu nome"
+          pattern="[a-z\s]+$"
+        />
+      </div>
+
+      <div>
+        <label for="campo-email">Email</label>
+        <input
+          type="email"
+          placeholder="Seu Email"
+          name="email"
+          id="campo-email"
+        />
+      </div>
+
+      <div>
+        <label for="senha">Senha</label>
+        <input
+          type="password"
+          name="senha"
+          placeholder="Sua senha"
+          id="senha"
+        />
+      </div>
+
+      Cursos
+      <div>
+        <input type="checkbox" name="en" value="en" /> Inglês
+        <input type="checkbox" name="pt" value="pt" /> Português
+      </div>
+
+      Sexo
+      <div>
+        <input type="radio" name="sexo" value="M" /> Masculino
+        <input type="radio" name="sexo" value="F" /> Feminino
+      </div>
+
+      Estado
+      <div>
+        <select name="estado">
+          <option value="">-- Selecione um estado --</option>
+          <option value="sp">São Paulo</option>
+          <option value="rj">Rio de Janeiro</option>
+        </select>
+      </div>
+
+      Comentario
+      <div>
+        <textarea name="comentario" rows="5" cols="50"></textarea>
+      </div>
+
+      <br />
+      <input type="submit" value="enviar form" name="op-enviar" />
+      <input type="reset" value="limpar" name="limpar" />
+    </form>
+    <hr />
+    <button>test</button>
+  </body>
+</html>
