@@ -1,0 +1,48 @@
+
+.bar-top-contact{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-top);
+    color: var(--top-link-color);
+    padding: 20px 30px;
+}
+
+.top-contact{
+    color: var(--top-link-color);
+    text-decoration: none;
+}
+
+.top-contact:hover {
+    color: var(--link-hover);
+}
+
+.top-contact:active {
+    color: #ff0000;
+}
+
+.top-contact:focus{
+    outline-color: #ff0000;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-top {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.item-menu > a{
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.item-menu > a:hover {
+    color: var(--link-hover);
+}
