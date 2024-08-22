@@ -33,6 +33,25 @@ html {
     color: #27e2ff;
 }
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-top {
+    display: flex;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.item-menu > a{
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+}
+
+
 /* Operador AND */
 /*.numero.testando1{
     color: blueviolet;
