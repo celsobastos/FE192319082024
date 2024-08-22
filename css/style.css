@@ -33,6 +33,18 @@ html {
     color: #27e2ff;
 }
 
+.top-contact:active {
+    color: #ff0000;
+}
+
+.top-contact:focus{
+    outline-color: #ff0000;
+}
+
+h1:target {
+    background-color: rgb(0, 211, 231);
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
