@@ -1,0 +1,22 @@
+.content-main {
+    display: flex;
+}
+
+.main {
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(113, 96, 153);
+}
+.main h1 {
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px;
+}
+.main p {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.boy {
+    width: 50%;
+}
+

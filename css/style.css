@@ -1,5 +1,5 @@
 :root {
-    --color-top: #000; 
+    --color-top: #161616; 
     --font-root: 20px;
     --top-link-color: #fff;
     --link-hover: #00a0b8;
@@ -21,4 +21,8 @@ a {
 @font-face {
     font-family: pepper;
     src: url(../fonts/pepper-sauce.ttf);
+}
+
+.container {
+    margin: 5px 20px;
 }

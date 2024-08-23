@@ -6,6 +6,7 @@
     background-color: var(--color-top);
     color: var(--top-link-color);
     padding: 20px 30px;
+    box-shadow: 0px 2px 6px rgb(150, 150, 156);
 }
 
 .top-contact{
@@ -34,6 +35,7 @@
 .menu .logo {
     font-family: "Matemasie", sans-serif;
     font-size: 1.5rem;
+    color: rgb(2, 91, 173);
 }
 
 .menu-top {
