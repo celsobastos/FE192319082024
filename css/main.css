@@ -9,19 +9,12 @@
 .main h1 {
     text-transform: uppercase;
     text-shadow: 1px 1px 1px;
+    font-size: 1.2rem;
 }
 
-.teste {
-    background-color: #0000ff;
-    color: aliceblue;
-    position: sticky;
-    top: 0;
-}
-
-.main div.slogan {
-    border: 1px solid #000;
-    /*overflow: auto;*/
-    height: 200px;
+.main p.slogan {
+    font-size: 0.8rem;
+    padding: 8px 0;
 }
 
 .boy {
