@@ -15,4 +15,10 @@ html {
 
 a {
     color: var(--color-top);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: pepper;
+    src: url(../fonts/pepper-sauce.ttf);
 }

@@ -32,7 +32,8 @@
 }
 
 .menu .logo {
-    background-color: #ff0000;
+    font-family: "Matemasie", sans-serif;
+    font-size: 1.5rem;
 }
 
 .menu-top {
@@ -58,8 +59,10 @@
 }
 
 .filha {
-    background-color: #ff0000;
     width: 50%;
     font-size: 2em;
+    font-family: "Bungee Tint", sans-serif;
+    color: rgb(243, 153, 153);
+    cursor: pointer;
 }
 
