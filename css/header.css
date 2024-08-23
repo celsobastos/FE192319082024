@@ -31,6 +31,10 @@
     align-items: center;
 }
 
+.menu .logo {
+    background-color: #ff0000;
+}
+
 .menu-top {
     display: flex;
     list-style-type: none;
@@ -46,3 +50,16 @@
 .item-menu > a:hover {
     color: var(--link-hover);
 }
+
+.mae {
+    background-color: aqua;
+    width: 600px;
+    font-size: 2rem;
+}
+
+.filha {
+    background-color: #ff0000;
+    width: 50%;
+    font-size: 2em;
+}
+
