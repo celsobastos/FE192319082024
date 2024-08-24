@@ -16,8 +16,18 @@
 }
 
 .contact-us{
-    padding: 20px;
     background-color: #fff;
-    width: 50%;
+    width: 40%;
     min-height: 300px;
+}
+
+.titulo {
+    background: linear-gradient(#00058f, #0134ff);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.fomulario, .rodape {
+    padding: 5px 10px 15px;
 }
