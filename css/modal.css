@@ -30,4 +30,19 @@
 
 .fomulario, .rodape {
     padding: 5px 10px 15px;
+    font-size: 0.6rem;
+}
+
+.fomulario input {
+    width: 100%;
+    padding: 5px;
+}
+
+.fomulario label {
+    display: block;
+}
+
+
+.fomulario div {
+    padding: 5px 0;
 }
