@@ -6,6 +6,7 @@
     height: 100%;
     background: linear-gradient(#000000c5, #00000047);
     cursor: no-drop;
+    display: block;
 }
 
 .content-contact {
@@ -19,6 +20,8 @@
     background-color: #fff;
     width: 40%;
     min-height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 31px;
 }
 
 .titulo {
@@ -26,6 +29,7 @@
     text-align: center;
     color: #fff;
     padding: 10px;
+    border-radius: 4px 4px 0 0;
 }
 
 .fomulario, .rodape {
