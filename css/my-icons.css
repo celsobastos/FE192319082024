@@ -1,0 +1,21 @@
+[class^="icon-"]::after,
+[class^="icon-"]::before{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.icon-arrow::after {
+    content: "\f061";
+    color: red
+}
+
+.icon-arrow:hover::after {
+    color: rgb(4, 25, 215)
+}
+
+.icon-phone::before {
+    content: "\f095";
+    color: aquamarine;
+    padding-right: 5px;
+}
