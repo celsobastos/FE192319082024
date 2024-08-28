@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./plugin/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/servicos.css" />
@@ -20,7 +20,7 @@
     />
   </head>
   <body class="home">
-    <!-- <header>
+    <header>
       <div class="bar-top-contact">
         <div class="fone">
           <a href="#" class="icon-phone top-contact"
@@ -43,18 +43,20 @@
               <li class="item-menu"><a href="#">About</a></li>
               <li class="item-menu"><a href="#">Contact us</a></li>
             </ul>
+            <button class="icon-humburger btn-menu-top"></button>
           </nav>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- 
       <section>
         <div class="container">
-          <div class="content-main">
-            <div class="main">
+          <div class="row content-main">
+            <div class="main cols-lg-6">
               <h1>Repair and Maintenance Services</h1>
-              <p class="slogan">
+              <p
+                class="slogan text-center .text-sm-justify { text-align: justify; }"
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
                 eligendi unde nulla eum quis facilis quae at tenetur iste. Natus
                 aperiam repudiandae sit, ratione sequi iste doloribus nostrum,
@@ -62,19 +64,32 @@
               </p>
               <a href="#" class="btn">Contact us</a>
             </div>
-            <div class="boy"></div>
+            <div class="boy cols-lg-6">
+              <img
+                src="img/slider-img.png"
+                alt="Homem com roupa e ferramnetas de trabalho"
+              />
+            </div>
           </div>
         </div>
-      </section> 
-    -->
+      </section>
       <section>
         <div class="container">
           <div class="servicos">
-            <div class="linha">
-              <div class="colunas-sm-6 colunas-md-3">Reparação</div>
-              <div class="colunas-sm-6 colunas-md-3">Melhorias</div>
-              <div class="colunas-sm-12 colunas-md-3">Manutenção</div>
-              <div class="colunas-sm-12 colunas-md-3">Manutenção 2</div>
+            <div class="row m-service">
+              <div class="cols-xl-3 service-item"></div>
+              <div class="cols-xl-6 service-item row">
+                <div class="cols-sm-4">
+                  <div class="s-item">Reparos</div>
+                </div>
+                <div class="cols-sm-4 s-item">
+                  <div class="s-item">Melhorias</div>
+                </div>
+                <div class="cols-sm-4 s-item">
+                  <div class="s-item">Manutenção</div>
+                </div>
+              </div>
+              <div class="cols-xl-3 service-item"></div>
             </div>
           </div>
         </div>

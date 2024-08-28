@@ -19,3 +19,19 @@
     color: aquamarine;
     padding-right: 5px;
 }
+
+.icon-humburger{
+    width: 30px;
+    height: 30px;
+    border: solid #666 1px;
+    border-radius: 5px;
+}
+
+.icon-humburger::before {
+    content: "\f0c9";
+    font-size: 22px;
+    position: relative;
+    left: -2px;
+    top: -1px;
+    color: #626262;
+}

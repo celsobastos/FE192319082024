@@ -68,3 +68,28 @@
     cursor: pointer;
 }
 
+/* Menu responsivo */
+@media screen and (max-width: 576px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .menu-top {
+        display: none;
+        position: absolute;
+        left: -341px;
+        top: 30px;
+        width: 100px;
+        background-color: rgb(225, 225, 225);
+    }
+
+
+}
+
+@media screen and (min-width: 576px) {
+    .btn-menu-top {
+        display: none;
+    }
+}
+
