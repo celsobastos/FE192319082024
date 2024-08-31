@@ -12,7 +12,7 @@
 }
 
 .s-item:hover {
-    background-color: #d4774c;
+    /* background-color: #d4774c; */
     cursor: pointer;
 }
 

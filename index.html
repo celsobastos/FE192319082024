@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/servicos.css" />
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/my-icons.css" />
+    <link rel="stylesheet" href="css/app.css" />
 
     <title>Inance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,6 +37,7 @@
           <div class="logo">INANCE</div>
           <nav>
             <ul class="menu-top">
+              <a href="#" data-close="close">fechar</a>
               <li class="item-menu">
                 <a href="#">Home</a>
               </li>
@@ -43,7 +45,10 @@
               <li class="item-menu"><a href="#">About</a></li>
               <li class="item-menu"><a href="#">Contact us</a></li>
             </ul>
-            <button class="icon-humburger btn-menu-top"></button>
+            <button
+              class="icon-humburger btn-menu-top"
+              data-js-component="btn-humburger"
+            ></button>
           </nav>
         </div>
       </div>
@@ -79,14 +84,18 @@
             <div class="row m-service">
               <div class="cols-xl-3 service-item"></div>
               <div class="cols-xl-6 service-item row">
-                <div class="cols-sm-4">
-                  <div class="s-item">Reparos</div>
+                <div class="cols-sm-4 s-item">
+                  <div class="s-item servicos-item" id="reparos">Reparos</div>
                 </div>
                 <div class="cols-sm-4 s-item">
-                  <div class="s-item">Melhorias</div>
+                  <div class="s-item servicos-item" id="melhorias">
+                    Melhorias
+                  </div>
                 </div>
                 <div class="cols-sm-4 s-item">
-                  <div class="s-item">Manutenção</div>
+                  <div class="s-item servicos-item" id="manutencao">
+                    Manutenção
+                  </div>
                 </div>
               </div>
               <div class="cols-xl-3 service-item"></div>
@@ -125,6 +134,8 @@
         </div>
       </div>
     </div>
-    <script src="js/meuPrimeiroJs.js"></script>
+    <!-- <script src="js/meuPrimeiroJs.js"></script> -->
+    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

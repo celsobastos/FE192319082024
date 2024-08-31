@@ -25,6 +25,7 @@
     height: 30px;
     border: solid #666 1px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .icon-humburger::before {
