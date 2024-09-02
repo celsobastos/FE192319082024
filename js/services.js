@@ -25,16 +25,15 @@ Pessoa.nome = 'Carlos'
 Pessoa.corOlhos = 'green'
 // console.log(Pessoa.corOlhos);
 function dataPessoa(pessoa) {
-    console.log(pessoa.boletim);
+    // console.log(pessoa.boletim);
 }
 
 var doc = document;
 // var reparos = doc.getElementById('reparos');
 var reparos = doc.querySelectorAll('.servicos-item');
-
 reparos.forEach(item => {
     item.addEventListener('click', event => {
-        console.log('mouse passor por aqui...');
+        // console.log('mouse passor por aqui...');
         event.target.classList.toggle('format')
         
         var test = event.target.parentNode.parentNode.lastElementChild.lastElementChild;

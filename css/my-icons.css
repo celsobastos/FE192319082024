@@ -36,3 +36,7 @@
     top: -1px;
     color: #626262;
 }
+
+.icon-close::after{
+    content: "\f00d";
+}
