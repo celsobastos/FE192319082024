@@ -9,6 +9,10 @@
     display: none;
 }
 
+.show-modal {
+    display: block;
+}
+
 .content-contact {
     display: flex;
     height: 100%;
