@@ -1,52 +1,3 @@
-<<<<<<< Updated upstream
-[class^="icon-"]::after,
-[class^="icon-"]::before{
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    color: rgb(0, 0, 0);
-}
-
-.icon-arrow::after {
-    content: "\f061";
-    color: red
-}
-
-.icon-arrow:hover::after {
-    color: rgb(4, 25, 215)
-}
-
-.icon-phone::before {
-    content: "\f095";
-    color: aquamarine;
-    padding-right: 5px;
-}
-
-.icon-humburger{
-    width: 30px;
-    height: 30px;
-    border: solid #666 1px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.icon-humburger::before {
-    content: "\f0c9";
-    font-size: 22px;
-    position: relative;
-    left: -2px;
-    top: -1px;
-    color: #626262;
-}
-
-.icon-close::after{
-    content: "\f00d";
-}
-
-.icon-error::before{
-    content: "\f00d";
-    color: #ff0000;
-}
-=======
 :root {
     --services-color: #545551;
 }
@@ -121,4 +72,3 @@
     content: "\f00d";
 }
 
->>>>>>> Stashed changes
