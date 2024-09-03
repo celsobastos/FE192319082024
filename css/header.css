@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 .bar-top-contact{
     font-size: 0.8rem;
@@ -139,3 +140,151 @@
     }
 }
 
+=======
+
+.bar-top-contact{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-top);
+    color: var(--top-link-color);
+    padding: 20px 30px;
+    box-shadow: 0px 2px 6px rgb(150, 150, 156);
+}
+
+.top-contact{
+    color: var(--top-link-color);
+    text-decoration: none;
+}
+
+.top-contact:hover {
+    color: var(--link-hover);
+}
+
+.top-contact:active {
+    color: #ff0000;
+}
+
+.top-contact:focus{
+    outline-color: #ff0000;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo {
+    font-family: "Matemasie", sans-serif;
+    font-size: 1.5rem;
+    color: rgb(2, 91, 173);
+}
+
+.menu-top ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+.item-menu > a{
+    padding: 0 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.item-menu > a:hover {
+    color: var(--link-hover);
+}
+
+.mae {
+    background-color: aqua;
+    width: 600px;
+    font-size: 2rem;
+}
+
+.filha {
+    width: 50%;
+    font-size: 2em;
+    font-family: "Bungee Tint", sans-serif;
+    color: rgb(243, 153, 153);
+    cursor: pointer;
+}
+
+/* Menu responsivo */
+@media screen and (max-width: 576px) {
+    
+    .menu-top {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        position: absolute;
+        left: -100%;
+        background-color: #ffffff;
+        color: #ffffff;
+        height: 100%;
+        width: 100%;
+        animation-duration: 500ms;
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+        z-index: 2;
+    }
+
+    .menu-top ul {
+        flex-direction: column;
+    }
+
+    .menu-top .btn-close-drywall {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-top .btn-menu-top {
+        z-index: 1;
+    }
+
+    .active {
+        animation-name: painelAnimado;
+        animation-play-state: running;
+        /* overflow-y: hidden !important; */
+    }
+
+    .close {
+        animation-name: painelclose;
+        animation-play-state: running;
+        /* overflow-y: scroll; */
+    }
+
+    @keyframes painelAnimado {
+        from {
+            position: absolute;
+            left: -100%;
+        }
+        to {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    @keyframes painelclose {
+        from {
+            position: absolute;
+            left: 0;
+        }
+        to {
+            position: absolute;
+            left: -100%;
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 576px) {
+    .btn-menu-top, .btn-close-drywall {
+        display: none;
+    }
+}
+
+>>>>>>> Stashed changes

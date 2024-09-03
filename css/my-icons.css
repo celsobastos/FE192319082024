@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [class^="icon-"]::after,
 [class^="icon-"]::before{
     font-family: 'Font Awesome 6 Free';
@@ -45,3 +46,79 @@
     content: "\f00d";
     color: #ff0000;
 }
+=======
+:root {
+    --services-color: #545551;
+}
+
+[class^="icon-"]::after,
+[class^="icon-"]::before{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.icon-arrow::after {
+    content: "\f061";
+    color: red
+}
+
+.icon-arrow:hover::after {
+    color: rgb(4, 25, 215)
+}
+
+.icon-phone::before {
+    content: "\f095";
+    color: aquamarine;
+    padding-right: 5px;
+}
+
+.icon-humburger{
+    width: 30px;
+    height: 30px;
+    border: solid #666 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-humburger::before {
+    content: "\f0c9";
+    font-size: 22px;
+    position: relative;
+    left: -2px;
+    top: -1px;
+    color: #626262;
+}
+
+.icon-service::before {
+    content: "\e589";
+}
+
+.icon-melhorias::before {
+    content: "\f7d9";
+}
+
+
+.icon-manutencao::before {
+    content: "\f5aa";
+}
+
+.icon-service::before,
+.icon-melhorias::before,
+.icon-manutencao::before {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.icon-service:hover::before,
+.icon-melhorias:hover::before,
+.icon-manutencao:hover::before {
+    color: var(--services-colo);
+    text-shadow: 1px 1px 5px #000;
+}
+
+.icon-close::before {
+    content: "\f00d";
+}
+
+>>>>>>> Stashed changes

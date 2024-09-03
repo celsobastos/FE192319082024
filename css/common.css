@@ -24,14 +24,10 @@ a {
     src: url(../fonts/pepper-sauce.ttf);
 }
 
-.container {
-    margin: 5px 20px;
-}
-
 .btn {
     font-size: 0.8rem;
     background: linear-gradient(#ff9e27, #a45a00);
-    padding: 2px 9px;
+    padding: 10px 9px;
     border-radius: 5px;
     color: #3b1107;
     max-width: 100px;
@@ -53,6 +49,36 @@ a {
 
 [class^="cols"] {
     width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 570px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 990px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -113,4 +139,12 @@ a {
     .cols-xl-10 { width: 83.33%}
     .cols-xl-11 { width: 91.66%}
     .cols-xl-12 { width: 100%}
+}
+
+/* section:nth-child(odd) {
+    background-color: #f4fdff;
+} */
+
+section:nth-child(even) {
+    background-color: #EDAC5D;
 }

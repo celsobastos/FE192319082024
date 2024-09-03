@@ -1,19 +1,33 @@
 
 .m-service {
-
 }
 
-.service-item {
+.servicos-item {
+    padding: 20px 30px;
+    background-color: #03479F;
+    margin: 0 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+.servicos-item span{
+    display: block;
+    padding: 0  0 20px;
+}
+
+.servicos-item:hover {
+    background-color: #447DF0;
+    cursor: pointer;
+    color: #000000;
 }
 
 .s-item {
-    padding: 20px 5px;
-    background-color: #ed4d08;
+    
 }
 
-.s-item:hover {
-    /* background-color: #d4774c; */
-    cursor: pointer;
+.servicos-item.format {
+    background-color: #0098be;
+    color: rgb(255, 255, 255);
 }
 
 .all {
