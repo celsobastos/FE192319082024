@@ -6,7 +6,7 @@
     height: 100%;
     background: linear-gradient(#000000c5, #00000047);
     cursor: no-drop;
-    display: none;
+    display: block;
 }
 
 .show-modal {
@@ -22,7 +22,7 @@
 
 .contact-us{
     background-color: #fff;
-    width: 40%;
+    width: 90%;
     min-height: 300px;
     border-radius: 5px;
     box-shadow: 1px 1px 31px;
