@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/modal.css" />
     <link rel="stylesheet" href="css/my-icons.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/validacaoForm.css" />
 
     <title>Inance</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -114,9 +115,17 @@
     <div class="modal" data-modal="show">
       <div class="content-contact">
         <div class="contact-us">
-          <div class="titulo">Contact Us</div>
+          <div class="titulo">
+            <span>Contact Us</span>
+            <span class="icon-close" data-js="close-modal"></span>
+          </div>
           <div class="fomulario">
-            <form action="">
+            <form
+              method="post"
+              data-js="form-contact"
+              action=""
+              class="form-contact"
+            >
               <div>
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" />
@@ -126,11 +135,16 @@
                 <input type="email" id="email" name="email" />
               </div>
               <div>
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" />
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" name="comentario"></textarea>
               </div>
               <div>
-                <input type="submit" value="Cadastrar" class="btn" />
+                <input
+                  type="submit"
+                  data-js="btn-contact-submit"
+                  value="Cadastrar"
+                  class="btn"
+                />
               </div>
             </form>
           </div>
@@ -146,5 +160,6 @@
     <script src="js/menu.js"></script>
     <script src="js/modules.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/fom-contact.js"></script>
   </body>
 </html>

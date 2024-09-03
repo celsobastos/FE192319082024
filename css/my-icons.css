@@ -40,3 +40,8 @@
 .icon-close::after{
     content: "\f00d";
 }
+
+.icon-error::before{
+    content: "\f00d";
+    color: #ff0000;
+}
