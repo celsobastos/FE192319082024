@@ -22,6 +22,22 @@
     />
   </head>
   <body class="home">
+    <div>
+      <form action="">
+        <input id="custom-color" type="color" />
+      </form>
+    </div>
+
+    <script>
+      const color = document.getElementById("custom-color");
+      color.addEventListener("change", function () {
+        localStorage.setItem("bg", color.value);
+        document.body.style.backgroundColor = color.value
+      });
+
+      document.body.style.backgroundColor = localStorage.getItem("bg");
+    </script>
+
     <header>
       <div class="bar-top-contact">
         <div class="fone">
@@ -116,6 +132,13 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="div1">
+          <div class="div1-1">Div 1</div>
+          <div class="div1-2">Div 2</div>
+          <div class="div1-3"><div class="div1-3-1">Div 3</div></div>
+        </div>
+      </section>
     </main>
     <div class="modal" data-modal="show">
       <div class="content-contact">
@@ -125,18 +148,32 @@
             <span data-js="close-modal" class="icon-close"></span>
           </div>
           <div class="fomulario">
-            <form action="" data-js="form-contact" method="post">
+            <form data-js="form-contact" method="post" action="">
               <div>
                 <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" />
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  data-js="valida-form"
+                />
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  data-js="valida-form"
+                />
               </div>
               <div>
                 <label for="comentario">Comentario</label>
-                <textarea id="comentario" name="comentario"></textarea>
+                <textarea
+                  id="comentario"
+                  name="comentario"
+                  data-js="valida-form"
+                ></textarea>
               </div>
               <div>
                 <input
