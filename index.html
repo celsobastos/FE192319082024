@@ -22,28 +22,14 @@
     />
   </head>
   <body class="home">
-    <div>
-      <form action="">
-        <input id="custom-color" type="color" />
-      </form>
-    </div>
-
-    <script>
-      const color = document.getElementById("custom-color");
-      color.addEventListener("change", function () {
-        localStorage.setItem("bg", color.value);
-        document.body.style.backgroundColor = color.value
-      });
-
-      document.body.style.backgroundColor = localStorage.getItem("bg");
-    </script>
-
     <header>
       <div class="bar-top-contact">
         <div class="fone">
           <a href="#" class="icon-phone top-contact"
             >Call: +55 (11) 98585-0525</a
           >
+
+          <input id="custom-color" type="color" />
         </div>
         <div class="email">
           <a href="#" class="top-contact">Email: inance@inance.com.br</a>
@@ -196,5 +182,14 @@
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/form-contact.js"></script>
+    <script>
+      const color = document.getElementById("custom-color");
+      color.addEventListener("input", function () {
+        localStorage.setItem("bg", color.value);
+        document.body.style.backgroundColor = color.value;
+      });
+
+      document.body.style.backgroundColor = localStorage.getItem("bg");
+    </script>
   </body>
 </html>
