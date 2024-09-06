@@ -4,7 +4,6 @@
 
     const form = doc.getElementById('form-cadastro');
     const cep = doc.getElementById('cep');
-
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         validate.valid();
@@ -12,9 +11,10 @@
             form.submit();
         }
     })
-    // 01310930
-    cep.addEventListener('keyup', function(event) {
+
+    cep.addEventListener('keydown', function(event) {
         if (event.code === 'Enter' && validate.isValidCep(cep.value)) {
+            event.preventDefault();
             sendAjax(cep.value);
         }
     });
@@ -39,7 +39,7 @@
 
     function sendFormAjax() {
         let ajax = new XMLHttpRequest();
-        let url = `http://127.0.0.1:5500/usuario/cadastro`;
+        let url = `http://127.0.0.1:5500/cadastro`;
         ajax.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 const parse = JSON.parse(this.responseText);
@@ -54,8 +54,6 @@
         ajax.open('POST', url, true);
         ajax.send();
     }
-
-    
 
 })(document, Validate)
 
