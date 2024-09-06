@@ -18,6 +18,10 @@
         });
     }
 
+    Validate.prototype.isValidCep = function(cep) {
+        return cep.length <= 8 && cep.length > 0;
+    }
+
     Validate.prototype.test = function(){
         return this.isEmpty;
     }

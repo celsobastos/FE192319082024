@@ -1,24 +1,61 @@
-(function() {
+(function(doc, Validate) {
 
-    let ajax = new XMLHttpRequest();
-    let url = 'https://viacep.com.br/ws/01310931/json/';
+    const validate = new Validate(['cep']);
 
-    console.log(ajax)
+    const form = doc.getElementById('form-cadastro');
+    const cep = doc.getElementById('cep');
 
-    console.log('Carregando');
-    ajax.onreadystatechange = function() {
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        validate.valid();
+        if (validate.test()) {
+            form.submit();
+        }
+    })
+    // 01310930
+    cep.addEventListener('keyup', function(event) {
+        if (event.code === 'Enter' && validate.isValidCep(cep.value)) {
+            sendAjax(cep.value);
+        }
+    });
 
-        console.log("Ajax: ", this);
-        // if (this.readyState == 4 && this.status == 200) {
-        //     console.log(this.responseText);
-        // }  
-        
-        // if (this.status == 400) {
-        //     console.log('erro na requisição tente mais tarde');   
-        // }
+    function sendAjax(cep) {
+        let ajax = new XMLHttpRequest();
+        let url = `https://viacep.com.br/ws/${cep}/json/`;
+        ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const parse = JSON.parse(this.responseText);
+                form[1].value = parse.logradouro;
+                form[2].value = parse.localidade;
+                form[3].value = parse.bairro;
+            }
+            else if(this.readyState == 4 && this.status == 400) {
+                console.log('voltou 4000')
+            }  
+        }
+        ajax.open('GET', url, true);
+        ajax.send();
     }
 
-    ajax.open('GET', url, true);
-    ajax.send();
+    function sendFormAjax() {
+        let ajax = new XMLHttpRequest();
+        let url = `http://127.0.0.1:5500/usuario/cadastro`;
+        ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                const parse = JSON.parse(this.responseText);
+                form[1].value = parse.logradouro;
+                form[2].value = parse.localidade;
+                form[3].value = parse.bairro;
+            }
+            else if(this.readyState == 4 && this.status == 400) {
+                console.log('voltou 4000')
+            }  
+        }
+        ajax.open('POST', url, true);
+        ajax.send();
+    }
 
-})()
+    
+
+})(document, Validate)
+

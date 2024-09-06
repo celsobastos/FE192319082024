@@ -146,12 +146,16 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="cols-sm-3"></div>
-          <div class="cols-sm-6">
+          <div class="cols-sm-4"></div>
+          <div class="cols-sm-4">
             <h2>Cadastre-se</h2>
-            <form action="" method="post">
+            <form
+              id="form-cadastro"
+              action="http://127.0.0.1:3000/usuario/cadastro"
+              method="post"
+            >
               <div class="control">
-                <input type="text" name="cep" placeholder="Cep" />
+                <input type="text" name="cep" placeholder="Cep" id="cep" />
               </div>
               <div class="control">
                 <input type="text" name="logradouro" placeholder="Logradouro" />
@@ -167,7 +171,7 @@
               </div>
             </form>
           </div>
-          <div class="cols-sm-3"></div>
+          <div class="cols-sm-4"></div>
         </div>
       </div>
     </footer>
