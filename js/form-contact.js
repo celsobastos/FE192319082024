@@ -18,29 +18,42 @@
 
             const contatosJson = JSON.stringify(contatos);
 
-            sendAjax(contatosJson);
+            sendAjax(contatos);
         }
     });
 
     let aviso = doc.getElementById('aviso');
 
     function sendAjax(dadosDeContatos) {
-        let ajax = new XMLHttpRequest();
-        let url = 'http://127.0.0.1:3000/contatos';
 
-        ajax.open('POST', url, true);
-        ajax.setRequestHeader('Content-Type', 'application/json');
+        $.ajax({
+            method: "POST",
+            url: "http://127.0.0.1:3000/contatos",
+            data: dadosDeContatos
+        })
+        .done(function( msg ) {
+            console.log(msg);
+        }); 
 
-        aviso.innerHTML = 'Aguarde estamos salvando os dados enviados.';
-        ajax.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                aviso.innerHTML = JSON.parse(this.responseText).mensagem;
-            }
-            else if(this.readyState == 4 && this.status == 400) {
-                console.log('voltou 400')
-            }  
-        }
-        ajax.send(dadosDeContatos);
+
+        // let ajax = new XMLHttpRequest();
+        // let url = 'http://127.0.0.1:3000/contatos';
+
+        // ajax.open('POST', url, true);
+        // ajax.setRequestHeader('Content-Type', 'application/json');
+
+        // aviso.innerHTML = 'Aguarde estamos salvando os dados enviados.';
+        // ajax.onreadystatechange = function() {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         aviso.innerHTML = JSON.parse(this.responseText).mensagem;
+        //     }
+        //     else if(this.readyState == 4 && this.status == 400) {
+        //         console.log('voltou 400')
+        //     }  
+        // }
+        // ajax.send(dadosDeContatos);
     }
+
+    $('#cep').mask('00000-000');
 
 })(Validate, document)

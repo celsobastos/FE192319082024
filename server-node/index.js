@@ -11,13 +11,22 @@ app.get('/', function(req, res) {
     res.send('olá deu certo, na url "/"');
 });
 
-app.get('/usuario', function(req, res) {
-    res.status(200).json({usuario: 'Amadeu'});
-});
+// app.get('/usuario', function(req, res) {
+//     res.status(200).json({usuario: 'Amadeu'});
+// });
 
 app.post('/cadastro', function(req, res) {
-    res.status(200).json({status: true});
+    res.redirect('http://127.0.0.1:5500/index.html')
     console.log('chegou: ' , req.body);
+});
+
+app.post('/contatos', function(req, res) {
+
+    setTimeout(() => {
+        res.json({status: true, mensagem: 'Dados salvo com sucesso.'})
+        console.log('Dados de Contato: ' , req.body);
+    }, 5000)
+
 });
 
 const hostname = '127.0.0.1';
