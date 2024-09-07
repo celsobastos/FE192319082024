@@ -37,23 +37,23 @@
         ajax.send();
     }
 
-    function sendFormAjax() {
-        let ajax = new XMLHttpRequest();
-        let url = `http://127.0.0.1:5500/cadastro`;
-        ajax.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                const parse = JSON.parse(this.responseText);
-                form[1].value = parse.logradouro;
-                form[2].value = parse.localidade;
-                form[3].value = parse.bairro;
-            }
-            else if(this.readyState == 4 && this.status == 400) {
-                console.log('voltou 4000')
-            }  
-        }
-        ajax.open('POST', url, true);
-        ajax.send();
-    }
+    // function sendFormAjax() {
+    //     let ajax = new XMLHttpRequest();
+    //     let url = `http://127.0.0.1:5500/cadastro`;
+    //     ajax.onreadystatechange = function() {
+    //         if (this.readyState == 4 && this.status == 200) {
+    //             const parse = JSON.parse(this.responseText);
+    //             form[1].value = parse.logradouro;
+    //             form[2].value = parse.localidade;
+    //             form[3].value = parse.bairro;
+    //         }
+    //         else if(this.readyState == 4 && this.status == 400) {
+    //             console.log('voltou 4000')
+    //         }  
+    //     }
+    //     ajax.open('POST', url, true);
+    //     ajax.send();
+    // }
 
 })(document, Validate)
 
